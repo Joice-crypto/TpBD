@@ -1,15 +1,15 @@
 import fastify from 'fastify'
 import cors from '@fastify/cors'
 import dotenv from 'dotenv'
-import { connect }  from '../src/db'
-
+import client from "./db";
+import { timesRoutes } from './routes/times'
 
 const app = fastify();
 
 
 dotenv.config();
-// faz a conecção com o banco de dados 
-const db = connect();
+
+app.register(timesRoutes)  
 
 app.register(cors, {
     origin: true,
