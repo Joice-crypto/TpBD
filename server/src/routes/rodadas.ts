@@ -1,1 +1,0 @@
-// aqui deve ficar os dados das partidas

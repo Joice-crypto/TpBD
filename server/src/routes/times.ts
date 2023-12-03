@@ -12,6 +12,8 @@ export async function timesRoutes(app: FastifyInstance) {
         id: "asc",
       },
     });
-    return times;
+
+    const timesData = times.rows
+    return timesData;
   });
 }
