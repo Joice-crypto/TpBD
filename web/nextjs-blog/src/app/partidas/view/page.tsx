@@ -40,7 +40,7 @@ export default async function ViewPartidas() {
                           <tbody key={part.ID_part}>
                               <tr>
                               <td>{part.ID_rod}</td>
-                                  <td> <a href={`http://localhost:3000/estatisticaRod/view/${part.ID_part}`}>{part.ID_part}</a></td>
+                                  <td> <a href={`http://localhost:3000/partidas/estatistica/${part.ID_part}`}>{part.ID_part}</a></td>
                                   <td> {dayjs(part.Data).format("D[/]M[/]YY")}</td>
                                   <td>{part.Estadio}</td>
                               </tr>
